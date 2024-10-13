@@ -1,4 +1,4 @@
-# Amyable High-Level Design Document
+# TEE Design Document
 
 ## Table of Contents
 
