@@ -1,9 +1,16 @@
-# .readthedocs.yml
+# .readthedocs.yaml
 version: 2
 
+# Build documentation using Sphinx
 sphinx:
   configuration: docs/conf.py
 
+# Specify the Python version
 python:
+  version: 3.8
   install:
     - requirements: docs/requirements.txt
+
+# Optionally, you can specify a different build image
+build:
+  image: "latest"  # This can be one of the available Read the Docs images like "stable", "ubuntu-20.04", or "ubuntu-22.04"
