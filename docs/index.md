@@ -1,8 +1,8 @@
-# Project Name
+# Aimyable
 
-Welcome to the **Project Name** documentation.
+Welcome to the **Aimyable** documentation.
 
 ## Table of Contents
 
-- [Getting Started](getting_started.md)
+- [Overview](overview.md)
 - [Architecture](architecture.md)
