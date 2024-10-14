@@ -22,7 +22,7 @@
 
 ## Introduction
 
-Amyable is a task automation application designed to perform tasks on a host machine by interpreting the current screen's state and executing the next set of actions. It leverages computer vision and natural language processing to understand the GUI elements and determine the appropriate actions to achieve the desired tasks.
+Aimyable is a task automation application designed to perform tasks on a host machine by interpreting the current screen's state and executing the next set of actions. It leverages computer vision and natural language processing to understand the GUI elements and determine the appropriate actions to achieve the desired tasks.
 
 ---
 
@@ -342,7 +342,7 @@ The core functionality involves capturing the current screen, interpreting GUI e
 
 ## Conclusion
 
-Amyable aims to automate tasks by intelligently interpreting the current state of the desktop environment and determining the necessary actions to accomplish a given task. By combining computer vision, natural language processing, and automation tools, it provides a robust framework for task automation on a host machine. The updated design leverages MongoDB for task and instruction management, simplifying the architecture and enhancing scalability.
+Aimyable aims to automate tasks by intelligently interpreting the current state of the desktop environment and determining the necessary actions to accomplish a given task. By combining computer vision, natural language processing, and automation tools, it provides a robust framework for task automation on a host machine. The updated design leverages MongoDB for task and instruction management, simplifying the architecture and enhancing scalability.
 
 ---
 
