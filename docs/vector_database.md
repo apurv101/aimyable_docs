@@ -1,4 +1,3 @@
-Using Vector Databases in Aimyable
 
 ### Using Vector Databases in Aimyable
 

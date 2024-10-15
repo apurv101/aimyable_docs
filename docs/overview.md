@@ -106,5 +106,3 @@ The architecture is designed for scalability and continuous operation:
 - **Fine-Tuned Instruction Handling**: Users can modify task execution paths with custom commands, passed through all engine layers.
 - **Low-Level Commands**: Actions such as "Take a screenshot" are executed at the instruction level, giving users precise control.
 - **Memory & Caching**: MongoDB is used to store intermediate results, and a caching system helps optimize repeated task execution.
-
-This architecture provides a seamless, flexible solution for managing projects, breaking them down into tasks, and converting those tasks into executable instructions while supporting fine-tuned user control.
