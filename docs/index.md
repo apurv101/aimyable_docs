@@ -8,3 +8,4 @@ Welcome to the **Aimyable** documentation.
 - [Architecture](architecture.md)
 - [Task Execution Engine](task_execution_engine.md)
 - [MongoDB Database Structure](mongodb_structure.md)
+- [Vector Database Structure](vector_database.md)
