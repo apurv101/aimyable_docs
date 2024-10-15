@@ -38,7 +38,7 @@ For the task "Read an email from xyz@gmail.com dated 10/21/2024 and create a bil
    ```json
    {"engine":"instruction_execution", "instruction":"open the email from xyz@gmail.com and save the data", "memory_key": "email_by_xyz_2341"}
    ```
-   - The email content is stored temporarily in Redis.
+   - The email content is stored temporarily in MongoDB.
 
 3. **Opening QuickBooks:**
    ```json
@@ -69,7 +69,7 @@ The **App Opening Engine** handles opening desktop or web apps as part of task e
 ## 5. Mini-RPA
 The **Mini-RPA** is deployed on a desktop and interacts with the system through Celery queues.
 
-- **Celery Queue**: Tasks are broken into instructions and queued for processing.
+- **Queue**: Tasks are broken into instructions and queued for processing.
 - **Screenshot Handling**: Mini-RPA captures screenshots, sends them to the server for action prediction, and then executes the predicted actions.
 - **Feedback Loop**: After executing actions, the system takes new screenshots to ensure it reaches the correct state.
 
@@ -78,7 +78,7 @@ The server hosts all the engines and manages processing:
 
 - **Instruction Execution Engine & App Opening Engine**: These engines process instructions on the server.
 - **Vision Models & Prompt Engines**: Vision models (YOLO, Google Vision) and prompts predict the next action based on screenshots.
-- **Redis Temporary Storage**: Redis is used to store intermediate data such as extracted emails during task execution.
+- **Temporary Storage**: MongoDB is used to store intermediate data such as extracted emails during task execution.
 - **Caching**: Frequently repeated tasks are cached for faster processing.
 
 ## 7. Task Decomposition & Customization
@@ -94,7 +94,7 @@ The **Task Decomposition Engine** breaks down tasks into instructions while cons
 ## 9. DevOps & Infrastructure
 The architecture is designed for scalability and continuous operation:
 
-- **Celery Queue System**: Task instructions are distributed across engines for asynchronous processing.
+- **MongoDB**: Task instructions are distributed across engines for asynchronous processing.
 - **Server-Client Communication**: Mini-RPA communicates with the server for real-time execution of actions.
 - **Vector Database**: Provides fast retrieval of past user conversations and task details.
   
@@ -105,6 +105,6 @@ The architecture is designed for scalability and continuous operation:
 ## Key Features
 - **Fine-Tuned Instruction Handling**: Users can modify task execution paths with custom commands, passed through all engine layers.
 - **Low-Level Commands**: Actions such as "Take a screenshot" are executed at the instruction level, giving users precise control.
-- **Memory & Caching**: Redis is used to store intermediate results, and a caching system helps optimize repeated task execution.
+- **Memory & Caching**: MongoDB is used to store intermediate results, and a caching system helps optimize repeated task execution.
 
 This architecture provides a seamless, flexible solution for managing projects, breaking them down into tasks, and converting those tasks into executable instructions while supporting fine-tuned user control.
