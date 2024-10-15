@@ -1,5 +1,5 @@
 
-# MongoDB Database Structure for Aimyable
+# MongoDB Database Structure
 
 To design the MongoDB database structure for Aimyable, considering the various components and processes involved, we will break down the requirements into collections and the fields necessary for each document type. The structure is designed to store projects, tasks, instructions, actions, and relevant execution histories. Here's a detailed overview of the MongoDB schema:
 

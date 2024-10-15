@@ -7,4 +7,4 @@ Welcome to the **Aimyable** documentation.
 - [Overview](overview.md)
 - [Architecture](architecture.md)
 - [Task Execution Engine](task_execution_engine.md)
-- [MongoDB Database Structure for Aimyable](mongodb_structure.md)
+- [MongoDB Database Structure](mongodb_structure.md)
