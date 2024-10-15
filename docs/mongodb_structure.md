@@ -262,4 +262,17 @@ The `task_scheduling` collection stores scheduling information for projects and 
 ```
 
 **Fields:**
-- `_
+- `_id`: MongoDB’s unique identifier.
+- `schedule_id`: Unique identifier for the schedule.
+- `project_id`: Reference to the project being scheduled.
+- `user_id`: Reference to the user who created the schedule.
+- `schedule`: Contains details about the frequency, time, and next execution of the scheduled project.
+- `created_at`: Timestamp when the schedule was created.
+- `updated_at`: Timestamp when the schedule was last updated.
+
+### Indexing & Optimization:
+- **Indexes**: Indexes are created on `task_id`, `project_id`, `instruction_id`, `user_id`, and `status` fields across collections to ensure efficient querying, particularly for retrieving pending tasks or instructions.
+- **TTL Index**: The `temporary_storage` collection should have a TTL (Time-to-Live) index on the `expires_at` field to automatically remove expired documents.
+
+This database structure allows for efficient task and project management, storage of historical and intermediate data, and real-time processing of instructions and actions.
+
